@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 router.get('/asynow', function(req, res, next){
   console.log(req.params);
   console.log(req.query);
-  res.send({tips: 'aaa'});
+  res.send({tips: 'tip title now'});
 });
 router.post('/asynow', function(req, res, next){
   console.log(req.body.way);
@@ -27,7 +27,7 @@ router.post('/asynow', function(req, res, next){
 });
 
 router.get('/asynow_temp', function(req, res, next){
-  // console.log(req);
+  res.send('<h1>emp {{tips}}</h1>');
 });
 
 module.exports = router;
